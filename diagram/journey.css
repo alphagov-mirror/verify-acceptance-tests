@@ -1,0 +1,29 @@
+svg .cluster:nth-of-type(1) polygon { fill: #6f72af; }
+svg .cluster:nth-of-type(2) polygon { fill: #ffbf47; }
+svg .cluster:nth-of-type(3) polygon { fill: #b10e1e; }
+svg .cluster:nth-of-type(4) polygon { fill: #85994b; }
+svg .cluster:nth-of-type(5) polygon { fill: #912b88; }
+
+svg .cluster text {
+  fill: white;
+  font-size: 16pt;
+}
+
+svg .node polygon {
+  fill: white;
+}
+
+svg .edge path {
+  stroke-width: 4px;
+  stroke: rgba(0,0,0,0.25);
+}
+
+svg .edge path:hover {
+  stroke: red;
+}
+
+svg text {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 7pt;
+}

@@ -9,4 +9,9 @@ set -eu
 
 bundle --quiet
 mkdir -p testreport
-SHOW_BROWSER=${SHOW_BROWSER:-"true"} TEST_ENV=local bundle exec cucumber --strict
+SHOW_BROWSER=${SHOW_BROWSER:-"true"} TEST_ENV=local bundle exec cucumber --strict \
+    --format=Baraviz::CucumberFormatter \
+    --out diagram/journey.dot \
+    --format pretty \
+
+./diagram/make.sh

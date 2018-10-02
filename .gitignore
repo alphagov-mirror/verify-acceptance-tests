@@ -1,3 +1,6 @@
 .idea
 testreport
 *.iml
+diagram/index.html
+diagram/journey.dot
+diagram/*.png
